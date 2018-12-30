@@ -1,0 +1,32 @@
+<<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script>
+    var string = JSON.stringify(
+    {
+        "id":"1",
+        "anh":"ALPS.jpg",
+        "ten":"Hiking in the ALPS",
+        "gia":"150000",
+        "currency":"VND",
+        "chu_de":""
+    });
+    var obj = JSON.parse(string);
+    console.log(obj);
+    console.log(obj.id);
+    alert(obj.anh);
+    alert(obj.ten);
+    alert(obj.gia);
+    alert(obj.currency);
+    </script>
+</head>
+<body>
+        <h1><script>document.write(console.log(obj.ten));</script></h1>
+
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script>
+    var request = new XMLHttpRequest();
+ 
+        request.open('GET', 'data.json', true);
+        
+        request.onload = function () {
+            // begin accessing JSON data here
+            var data = JSON.parse(this.response);
+            alert(data);
+            for (var i = 0; i++;) {
+                console.log(data[i].id + '. Ten:' + data[i].ten + '. Gia:'+ data[i].gia + data[i].currency );
+            }
+        }
+ 
+    request.send();
+    </script>
+    <style>
+        .container{
+            background-color: gray;
+            font-size: 20px;
+            display: block;
+            position: fixed;
+            z-index: 100000;
+            width: 100%;
+        }
+        .header-top-bar{
+            margin: 1% 10%;
+        }
+        .footer{
+            text-align: center;
+        }
+        .thu_vien_sach{
+            align-items: center;
+            text-align: center;
+        }
+        #book{
+            margin-top: 20px;
+            transition: 0.4s;
+        }
+        #book:hover{
+            margin-top:10px;
+            transition: 0.6s;
+        }
+    </style>    
+</head>
+<body>
+    <div class="container">
+        <div class="header-top-bar" id="fixNav">
+            <a href="trang_chu.html"><img src="logo_mobile.png"></a>
+            <ul>
+            <li><a href="#">BookStore</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="lien_he.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="padding-top:80px;">
+        <h1 style="text-align:center;">Danh Mục Sách</h1>
+    </div>
+    <section id="thu_vien_sach">
+        <div class="thu_vien_sach">
+            <div class="row">
+                <div class="col-md-3" id="book">
+                    <a href="#" >
+                    <img src="art_station.jpg" width="218" height="218">
+                    <p>Art Station</p>
+                    <p>100.000 VND</p>
+                    </a>
+                </div>
+                
+                <div class="col-md-3" id="book">
+                    <a href="#" >
+                    <img src="DESIGN.jpg" width="218" height="218">
+                    <p>Design</p>
+                    <p>90.000 VND</p>
+                    </a>
+                </div>
+                
+                <div class="col-md-3" id="book">
+                    <a href="#">
+                    <img src="you_are_not_a_hoarder.jpg" width="218" height="218">
+                    <p>You're not a Hoarder</p>
+                    <p>150.000 VND</p>
+                    </a>
+                </div>
+                
+                <div class="col-md-3" id="book">
+                    <a href="#">
+                        <img src="cocktails.jpg" width="218" height="218">
+                        <p>Cooktails the ultimate guide</p>
+                        <p>150.000 VND</p>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3" id="book">
+                    <a href="#">
+                        <img src="Healing_herbs.jpg" width="218" height="218">
+                        <p>Healing Herbs</p>
+                        <p>100.000 VND</p>
+                    </a>
+                </div>
+                
+                <div class="col-md-3"  id="book">
+                    <a href="#">
+                        <img src="KHALO.jpg" width="218" height="218">
+                        <p>KHALO</p>
+                        <p>79.000 VND</p>
+                    </a>
+                </div>
+                
+                <div class="col-md-3"  id="book">
+                    <a href="#">
+                        <img src="Looking_for_nini.jpg" width="218" height="218">
+                        <p>Looking for Nini</p>
+                        <p>200.000 VND</p>
+                    </a>
+                </div>
+                
+                <div class="col-md-3" id="book">
+                    <a href="#">
+                    <img src="origami.jpg" width="218" height="218">
+                    <p>Origami</p>
+                    <p>150.000 VND</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3" id="book">
+                    <a href="#">
+                    <img src="picasso.jpg" width="218" height="218">
+                    <p>Picasso</p>
+                    <p>100.000 VND</p>
+                    </a>
+                </div>
+                
+                <div class="col-md-3" id="book">
+                <a href="#">
+                    <img src="spokeb_word.jpg" width="218" height="218">
+                    <p>Spoken Word</p>
+                    <p>79.000 VND</p>
+                </a>
+                </div>
+                
+                <div class="col-md-3" id="book">
+                <a href="#">
+                    <img src="the_missing.jpg" width="218" height="218">
+                    <p>The Missing</p>
+                    <p>200.000 VND</p>
+                </a>
+                </div>
+                
+                <div class="col-md-3" id="book">
+                <a href="#">
+                    <img src="the_sahara.jpg" width="218" height="218">
+                    <p>The Sahara</p>
+                    <p>150.000 VND</p>
+                </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3" id="book">
+                <a href="#">
+                    <img src="99Chairs.jpg" width="218" height="218">
+                    <p>99 Chairs</p>
+                    <p>100.000 VND</p>
+                </a>
+                </div>
+                
+                <div class="col-md-3" id="book">
+                    <a href="#">
+                    <img src="Traveling.jpg" width="218" height="218">
+                    <p>Traveling with your Vegetarian Child</p>
+                    <p>79.000 VND</p>
+                    </a>
+                </div>
+                
+                <div class="col-md-3" id="book">
+                    <a href="#">
+                    <img src="waited_long_enough.jpg" width="218" height="218">
+                    <p>Waited long Enough</p>
+                    <p>200.000 VND</p>
+                    </a>
+                </div>
+                
+                <div class="col-md-3"id="book">
+                    <a href="#" >
+                    <img src="ALPS.jpg" width="218" height="218">
+                    <p>Hiking in the ALPS</p>
+                    <p>150.000 VND</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<footer>
+    <hr>
+    <div class="footer">
+            <div class="col-md-4">
+                <h3>ALPHA BOOKS</h3>
+    
+                <p>327 Giảng Võ, Đống Đa, Hà Nội</p>
+                        
+                <p>123-456-7890</p>
+                        
+                <p>info@my-domain.com</p>
+            </div>
+    
+            <div class="col-md-4">
+                <h3>Shop</h3>
+    
+                <p>FAQ</p>
+    
+                <p>Vận chuyển & Đổi trả</p>
+                        
+                <p>Hệ thống cửa hàng</p>
+                        
+                <p>Phương thức thanh toán</p>
+            </div>
+    
+            <div class="col-md-4">
+                <h3>Mạng Xã Hội</h3>
+    
+                <p>Facebook</p>
+                        
+                <p>Twitter</p>
+                        
+                <p>Instagram</p>
+    
+                <p>Pinterest</p>
+            </div>
+        </div>
+</footer>
+</html>
